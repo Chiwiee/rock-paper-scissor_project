@@ -25,11 +25,11 @@ function getHumanChoice() {
   let answer = prompt("Please pick between: Rock, Paper, Scissor");
 
   if (answer === "rock") {
-    console.log("Rock");
+    return "Rock";
   } else if (answer === "paper") {
-    console.log("Paper");
+    return "Paper";
   } else if (answer === "scissor") {
-    console.log("Scissor");
+    return "Scissor";
   } else {
     alert(`Please pick a valid answer`);
   }
