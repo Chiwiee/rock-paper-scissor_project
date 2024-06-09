@@ -46,10 +46,7 @@ let computerScore = 0;
 // 3. Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
 // 4. Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
 // 5. Increment the humanScore or computerScore variable based on the round winner.
-function playRound(humanChoice, computerChoice) {
-  getHumanChoice();
-  getComputerChoice();
-}
+function playRound(humanChoice, computerChoice) {}
 // Write the logic to play the entire game
 // 1. Create a new function named playGame.
 // 2. Move your playRound function and score variables so that they’re declared inside of the new playGame function
