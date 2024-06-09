@@ -30,6 +30,8 @@ function getHumanChoice() {
     console.log("Paper");
   } else if (answer === "Scissor" || "scissor") {
     console.log("Scissor");
+  } else {
+    alert(`Please pick a valid answer`);
   }
 }
 
