@@ -21,7 +21,9 @@ getComputerChoice();
 // 1. Create a new function named getHumanChoice.
 // 2. Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
 // 3. Test what your function returns by using console.log.
-function getHumanChoice() {}
+function getHumanChoice() {
+  let answer = prompt("Please pick between Rock, Paper, Scissor");
+}
 
 // Declare the players score variables
 // 1. Create two new variables named humanScore and computerScore in the global scope.
