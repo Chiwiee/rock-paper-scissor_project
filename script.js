@@ -26,6 +26,8 @@ function getHumanChoice() {
 
   if (answer === "Rock" || "rock") {
     console.log("Rock");
+  } else if (answer === "Paper" || "paper") {
+    console.log("Paper");
   }
 }
 
