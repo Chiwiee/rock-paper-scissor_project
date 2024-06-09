@@ -34,7 +34,7 @@ function getHumanChoice() {
     alert(`Please pick a valid answer`);
   }
 }
-
+getHumanChoice();
 // Declare the players score variables
 // 1. Create two new variables named humanScore and computerScore in the global scope.
 // 2. Initialize those variables with the value of 0.
