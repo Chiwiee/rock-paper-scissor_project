@@ -11,7 +11,10 @@ function getComputerChoice() {
     choice = "rock";
   } else if (result === 2) {
     choice = "paper";
+  } else {
+    choice = "Scissor";
   }
+  console.log(choice);
 }
 
 // getHumanChoice logic/algorithm
