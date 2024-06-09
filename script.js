@@ -2,9 +2,11 @@
 
 // getComputerChoice logic/algorithm
 // 1. Create a new function named getComputerChoice
-function getComputerChoice() {}
 // 2. Write the code so that getComputerChoice will randomly return one of the following string values: “rock”, “paper” or “scissors”.
 // 3. Test what your function returns by using console.log.
+function getComputerChoice() {
+  const result = Math.floor(Math.random() * 3) + 1;
+}
 
 // getHumanChoice logic/algorithm
 // 1. Create a new function named getHumanChoice.
