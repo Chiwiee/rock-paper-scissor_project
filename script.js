@@ -7,6 +7,9 @@
 function getComputerChoice() {
   const result = Math.floor(Math.random() * 3) + 1;
   let choice;
+  if (result === 1) {
+    choice = "rock";
+  }
 }
 
 // getHumanChoice logic/algorithm
