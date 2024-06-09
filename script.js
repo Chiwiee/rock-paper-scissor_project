@@ -9,6 +9,8 @@ function getComputerChoice() {
   let choice;
   if (result === 1) {
     choice = "rock";
+  } else if (result === 2) {
+    choice = "paper";
   }
 }
 
