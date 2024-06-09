@@ -6,6 +6,7 @@
 // 3. Test what your function returns by using console.log.
 function getComputerChoice() {
   const result = Math.floor(Math.random() * 3) + 1;
+  let choice;
 }
 
 // getHumanChoice logic/algorithm
