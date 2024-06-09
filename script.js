@@ -8,15 +8,15 @@ function getComputerChoice() {
   const result = Math.floor(Math.random() * 3) + 1;
   let choice;
   if (result === 1) {
-    choice = "rock";
+    choice = "Rock";
   } else if (result === 2) {
-    choice = "paper";
+    choice = "Paper";
   } else {
     choice = "Scissor";
   }
   console.log(choice);
 }
-
+getComputerChoice();
 // getHumanChoice logic/algorithm
 // 1. Create a new function named getHumanChoice.
 // 2. Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
