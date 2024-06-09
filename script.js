@@ -28,6 +28,8 @@ function getHumanChoice() {
     console.log("Rock");
   } else if (answer === "Paper" || "paper") {
     console.log("Paper");
+  } else if (answer === "Scissor" || "scissor") {
+    console.log("Scissor");
   }
 }
 
