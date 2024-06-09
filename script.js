@@ -23,6 +23,10 @@ getComputerChoice();
 // 3. Test what your function returns by using console.log.
 function getHumanChoice() {
   let answer = prompt("Please pick between Rock, Paper, Scissor");
+
+  if (answer === "Rock" || "rock") {
+    console.log("Rock");
+  }
 }
 
 // Declare the players score variables
