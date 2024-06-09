@@ -38,7 +38,8 @@ getHumanChoice();
 // Declare the players score variables
 // 1. Create two new variables named humanScore and computerScore in the global scope.
 // 2. Initialize those variables with the value of 0.
-
+let humanScore = 0;
+let computerScore = 0;
 // Write the logic to play a single round
 // 1. Create a new function named playRound.
 // 2. Define two parameters for playRound: humanChoice and computerChoice. Use these two parameters to take the human and computer choices as arguments.
