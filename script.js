@@ -22,13 +22,13 @@ getComputerChoice();
 // 2. Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
 // 3. Test what your function returns by using console.log.
 function getHumanChoice() {
-  let answer = prompt("Please pick between Rock, Paper, Scissor");
+  let answer = prompt("Please pick between: Rock, Paper, Scissor");
 
-  if (answer === "Rock" || "rock") {
+  if (answer === "Rock") {
     console.log("Rock");
-  } else if (answer === "Paper" || "paper") {
+  } else if (answer === "Paper") {
     console.log("Paper");
-  } else if (answer === "Scissor" || "scissor") {
+  } else if (answer === "Scissor") {
     console.log("Scissor");
   } else {
     alert(`Please pick a valid answer`);
@@ -46,7 +46,10 @@ let computerScore = 0;
 // 3. Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
 // 4. Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
 // 5. Increment the humanScore or computerScore variable based on the round winner.
-function playRound(humanChoice, computerChoice) {}
+function playRound(humanChoice, computerChoice) {
+  getHumanChoice();
+  getComputerChoice();
+}
 // Write the logic to play the entire game
 // 1. Create a new function named playGame.
 // 2. Move your playRound function and score variables so that they’re declared inside of the new playGame function
