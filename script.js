@@ -1,3 +1,4 @@
+// Step 1
 function getComputerChoice() {
   const result = Math.floor(Math.random() * 3) + 1;
   let choice;
@@ -11,7 +12,7 @@ function getComputerChoice() {
   console.log(choice);
 }
 getComputerChoice();
-
+// Step 2
 function getHumanChoice() {
   let answer = prompt("Please pick between: Rock, Paper, Scissor");
 
@@ -27,8 +28,8 @@ function getHumanChoice() {
   console.log(answer);
 }
 getHumanChoice();
-
+// Step 3
 let humanScore = 0;
 let computerScore = 0;
-
+// Step 4
 function playRound(humanChoice, computerChoice) {}
