@@ -42,3 +42,4 @@ function playRound(humanChoice, computerChoice) {
     return "You Win!";
   }
 }
+const humanSelection = getHumanChoice();
