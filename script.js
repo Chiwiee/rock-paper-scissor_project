@@ -44,3 +44,5 @@ function playRound(humanChoice, computerChoice) {
 }
 const humanSelection = getHumanChoice();
 const computerChoice = getComputerChoice();
+
+console.log(playRound(humanSelection, computerSelection));
