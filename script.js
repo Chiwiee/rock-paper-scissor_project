@@ -31,4 +31,8 @@ getHumanChoice();
 let humanScore = 0;
 let computerScore = 0;
 // Step 4
-function playRound(humanChoice, computerChoice) {}
+function playRound(humanChoice, computerChoice) {
+  if (humanChoice === computerChoice) {
+    return "Draw!";
+  }
+}
