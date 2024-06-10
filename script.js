@@ -41,6 +41,7 @@ function playRound(humanChoice, computerChoice) {
   } else if (humanChoice === "scissor" && computerChoice === "rock") {
     return "You Lose! Rock beats Scissor";
   } else {
+    humanScore += 1;
     return "You Win!";
   }
 }
