@@ -8,7 +8,6 @@ function getComputerChoice() {
   } else {
     return "Scissor";
   }
-  console.log(choice);
 }
 getComputerChoice();
 // Step 2
