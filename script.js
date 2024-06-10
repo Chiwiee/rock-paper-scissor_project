@@ -31,6 +31,8 @@ let computerScore = 0;
 // Step 4
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
+    humanScore += 1;
+    computerScore += 1;
     return "Draw!";
   } else if (humanChoice === "rock" && computerChoice === "paper") {
     return "You Lose! Paper beats Rock";
