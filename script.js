@@ -59,8 +59,8 @@ function playGame() {
   }
 
   console.log(`Game Result: ${playRound()}`);
-  console.log(`You: ${humanSelection}`);
-  console.log(`Computer: ${computerSelection}`);
+  console.log(`You Choose: ${humanChoice}`);
+  console.log(`Computer Choose: ${computerChoice}`);
   console.log(`Your Score: ${humanScore}`);
   console.log(`Computer Score: ${computerScore}`);
 }
