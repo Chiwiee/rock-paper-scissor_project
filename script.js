@@ -36,7 +36,7 @@ function playGame() {
 
   // Step 4
 
-  function playRound(humanChoice, computerChoice) {
+  function playRound() {
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
     if (humanChoice === computerChoice) {
@@ -58,7 +58,7 @@ function playGame() {
     }
   }
 
-  console.log(`Game Result: ${playRound(humanSelection, computerSelection)}`);
+  console.log(`Game Result: ${playRound()}`);
   console.log(`You: ${humanSelection}`);
   console.log(`Computer: ${computerSelection}`);
   console.log(`Your Score: ${humanScore}`);
