@@ -37,8 +37,8 @@ function playGame() {
   // Step 4
 
   function playRound() {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
     if (humanChoice === computerChoice) {
       humanScore += 1;
       computerScore += 1;
