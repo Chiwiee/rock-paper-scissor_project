@@ -6,7 +6,7 @@ function getComputerChoice() {
   } else if (result === 2) {
     return "Paper";
   } else {
-    choice = "Scissor";
+    return "Scissor";
   }
   console.log(choice);
 }
