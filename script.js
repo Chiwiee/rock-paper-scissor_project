@@ -4,7 +4,7 @@ function getComputerChoice() {
   if (result === 1) {
     return "Rock";
   } else if (result === 2) {
-    choice = "Paper";
+    return "Paper";
   } else {
     choice = "Scissor";
   }
