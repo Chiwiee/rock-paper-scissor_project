@@ -2,11 +2,11 @@
 function getComputerChoice() {
   const result = Math.floor(Math.random() * 3) + 1;
   if (result === 1) {
-    return "Rock";
+    return "rock";
   } else if (result === 2) {
-    return "Paper";
+    return "paper";
   } else {
-    return "Scissor";
+    return "scissor";
   }
 }
 getComputerChoice();
@@ -15,15 +15,14 @@ function getHumanChoice() {
   const answer = prompt("Please pick between: Rock, Paper, Scissor");
 
   if (answer === "rock") {
-    return "Rock";
+    return "rock";
   } else if (answer === "paper") {
-    return "Paper";
+    return "paper";
   } else if (answer === "scissor") {
-    return "Scissor";
+    return "scissor";
   } else {
     alert(`Please pick a valid answer`);
   }
-  console.log(answer);
 }
 getHumanChoice();
 // Step 3
