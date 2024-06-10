@@ -52,5 +52,7 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 console.log(playRound(humanSelection, computerSelection));
+console.log(humanSelection);
+console.log(computerSelection);
 console.log(humanScore);
 console.log(computerScore);
