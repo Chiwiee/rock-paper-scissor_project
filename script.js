@@ -13,7 +13,7 @@ function getComputerChoice() {
 getComputerChoice();
 // Step 2
 function getHumanChoice() {
-  let answer = prompt("Please pick between: Rock, Paper, Scissor");
+  const answer = prompt("Please pick between: Rock, Paper, Scissor");
 
   if (answer === "rock") {
     return "Rock";
