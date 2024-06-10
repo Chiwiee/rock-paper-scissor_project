@@ -61,6 +61,11 @@ function playGame() {
   }
 
   console.log(`Game Result: ${playRound()}`);
+  console.log(`Game Result: ${playRound()}`);
+  console.log(`Game Result: ${playRound()}`);
+  console.log(`Game Result: ${playRound()}`);
+  console.log(`Game Result: ${playRound()}`);
+
   console.log(`Your Score: ${humanScore}`);
   console.log(`Computer Score: ${computerScore}`);
 }
