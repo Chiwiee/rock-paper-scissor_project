@@ -25,34 +25,42 @@ function getHumanChoice() {
     alert(`Please pick a valid answer`);
   }
 }
-// Step 3
-let humanScore = 0;
-let computerScore = 0;
-// Step 4
-function playRound(humanChoice, computerChoice) {
-  if (humanChoice === computerChoice) {
-    humanScore += 1;
-    computerScore += 1;
-    return "Draw!";
-  } else if (humanChoice === "rock" && computerChoice === "paper") {
-    computerScore += 1;
-    return "You Lose! Paper beats Rock";
-  } else if (humanChoice === "paper" && computerChoice === "scissor") {
-    computerScore += 1;
-    return "You Lose! Scissor beats Paper";
-  } else if (humanChoice === "scissor" && computerChoice === "rock") {
-    computerScore += 1;
-    return "You Lose! Rock beats Scissor";
-  } else {
-    humanScore += 1;
-    return "You Win!";
-  }
-}
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-console.log(`Game Result: ${playRound(humanSelection, computerSelection)}`);
-console.log(`You: ${humanSelection}`);
-console.log(`Computer: ${computerSelection}`);
-console.log(`Your Score: ${humanScore}`);
-console.log(`Computer Score: ${computerScore}`);
+// Step 5
+
+function playGame() {
+  // Step 3
+
+  let humanScore = 0;
+  let computerScore = 0;
+
+  // Step 4
+
+  function playRound(humanChoice, computerChoice) {
+    if (humanChoice === computerChoice) {
+      humanScore += 1;
+      computerScore += 1;
+      return "Draw!";
+    } else if (humanChoice === "rock" && computerChoice === "paper") {
+      computerScore += 1;
+      return "You Lose! Paper beats Rock";
+    } else if (humanChoice === "paper" && computerChoice === "scissor") {
+      computerScore += 1;
+      return "You Lose! Scissor beats Paper";
+    } else if (humanChoice === "scissor" && computerChoice === "rock") {
+      computerScore += 1;
+      return "You Lose! Rock beats Scissor";
+    } else {
+      humanScore += 1;
+      return "You Win!";
+    }
+  }
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+
+  console.log(`Game Result: ${playRound(humanSelection, computerSelection)}`);
+  console.log(`You: ${humanSelection}`);
+  console.log(`Computer: ${computerSelection}`);
+  console.log(`Your Score: ${humanScore}`);
+  console.log(`Computer Score: ${computerScore}`);
+}
