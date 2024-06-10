@@ -43,6 +43,6 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 const humanSelection = getHumanChoice();
-const computerChoice = getComputerChoice();
+const computerSelection = getComputerChoice();
 
 console.log(playRound(humanSelection, computerSelection));
