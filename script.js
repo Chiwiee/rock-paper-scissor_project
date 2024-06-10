@@ -9,7 +9,6 @@ function getComputerChoice() {
     return "scissor";
   }
 }
-getComputerChoice();
 // Step 2
 function getHumanChoice() {
   const answer = prompt(
@@ -26,7 +25,6 @@ function getHumanChoice() {
     alert(`Please pick a valid answer`);
   }
 }
-getHumanChoice();
 // Step 3
 let humanScore = 0;
 let computerScore = 0;
