@@ -38,5 +38,7 @@ function playRound(humanChoice, computerChoice) {
     return "You Lose! Scissor beats Paper";
   } else if (humanChoice === "scissor" && computerChoice === "rock") {
     return "You Lose! Rock beats Scissor";
+  } else {
+    return "You Win!";
   }
 }
