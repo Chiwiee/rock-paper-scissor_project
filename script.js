@@ -22,7 +22,10 @@ function getHumanChoice() {
   } else if (answer === "scissor") {
     return "scissor";
   } else {
-    alert(`Please pick a valid answer`);
+    for (let i = 0; i < answer; i++) {
+      alert(`Please pick a valid answer`);
+      return answer;
+    }
   }
 }
 
