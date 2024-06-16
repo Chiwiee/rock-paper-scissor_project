@@ -62,3 +62,6 @@ function playGame() {
 }
 
 const play = document.querySelector("#play-btn");
+play.addEventListener("click", () => {
+  playGame();
+});
