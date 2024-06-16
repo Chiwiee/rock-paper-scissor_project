@@ -27,6 +27,10 @@ function getHumanChoice() {
     }
   }
 }
+
+let humanScore = 0;
+let computerScore = 0;
+
 function playRound() {
   const humanChoice = getHumanChoice();
   const computerChoice = getComputerChoice();
@@ -52,9 +56,6 @@ function playRound() {
 }
 
 function playGame() {
-  let humanScore = 0;
-  let computerScore = 0;
-
   console.log(`Game Result: ${playRound()}`);
   console.log(`Your Score: ${humanScore}`);
   console.log(`Computer Score: ${computerScore}`);
