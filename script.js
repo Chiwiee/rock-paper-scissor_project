@@ -60,3 +60,5 @@ function playGame() {
   console.log(`Your Score: ${humanScore}`);
   console.log(`Computer Score: ${computerScore}`);
 }
+
+const play = document.querySelector("#play-btn");
