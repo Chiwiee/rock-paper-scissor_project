@@ -61,6 +61,7 @@ function playGame(playRound) {
   console.log(`Game Result: ${playRound}`);
 
   const result = document.querySelector("#result");
+  result.textContent = `Game Result: ${playRound}`;
 }
 
 const play = document.querySelector("#play-btn");
