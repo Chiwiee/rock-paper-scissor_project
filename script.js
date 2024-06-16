@@ -55,13 +55,13 @@ function playRound() {
   }
 }
 
-function playGame() {
-  console.log(`Game Result: ${playRound()}`);
+function playGame(playRound) {
   console.log(`Your Score: ${humanScore}`);
   console.log(`Computer Score: ${computerScore}`);
+  console.log(`Game Result: ${playRound}`);
 }
 
 const play = document.querySelector("#play-btn");
 play.addEventListener("click", () => {
-  playGame();
+  playGame(playRound());
 });
