@@ -70,7 +70,7 @@ function playGame() {
   tieCount.textContent = `Tie: ${tieScore}`;
 }
 
-const play = document.querySelector("#play-btn");
+const play = document.querySelector("#rock-btn");
 play.addEventListener("click", () => {
   playGame();
 });
