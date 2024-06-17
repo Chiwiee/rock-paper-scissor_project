@@ -14,14 +14,6 @@ function getHumanChoice() {
   pickRock.addEventListener("click", () => {
     return "rock";
   });
-
-  if (answer === "rock") {
-    return "rock";
-  } else if (answer === "paper") {
-    return "paper";
-  } else if (answer === "scissor") {
-    return "scissor";
-  }
 }
 
 // Score Count
