@@ -56,17 +56,13 @@ function playRound() {
 }
 
 function playGame(playRound) {
-  console.log(`Your Score: ${humanScore}`);
-  console.log(`Computer Score: ${computerScore}`);
-  console.log(`Game Result: ${playRound}`);
-
   const result = document.querySelector("#result");
   result.textContent = `Game Result: ${playRound}`;
 
-  const playerScore = document.querySelector("player-score");
+  const playerScore = document.querySelector("#player-score");
   playerScore.textContent = `Player Score: ${humanScore}`;
 
-  const botScore = document.querySelector("computer-score");
+  const botScore = document.querySelector("#computer-score");
   botScore.textContent = `Computer Score: ${computerScore}`;
 }
 
