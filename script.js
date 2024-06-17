@@ -67,6 +67,7 @@ function playGame(playRound) {
   playerScore.textContent = `Player Score: ${humanScore}`;
 
   const botScore = document.querySelector("computer-score");
+  botScore.textContent = `Computer Score: ${computerScore}`;
 }
 
 const play = document.querySelector("#play-btn");
