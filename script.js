@@ -4,7 +4,7 @@ function getComputerChoice() {
     return "rock";
   } else if (result === 2) {
     return "paper";
-  } else {
+  } else if (result === 3) {
     return "scissor";
   }
 }
@@ -27,42 +27,41 @@ function getHumanChoice() {
     }
   }
 }
-
 let humanScore = 0;
 let computerScore = 0;
 let tieScore = 0;
+function playGame() {
+  function playRound(humanChoice, computerChoice) {
+    if (humanChoice === computerChoice) {
+      tieScore += 1;
+      return "Draw!";
+    } else if (humanChoice === "rock" && computerChoice === "paper") {
+      computerScore += 1;
+      return "You Lose! Paper beats Rock";
+    } else if (humanChoice === "paper" && computerChoice === "scissor") {
+      computerScore += 1;
+      return "You Lose! Scissor beats Paper";
+    } else if (humanChoice === "scissor" && computerChoice === "rock") {
+      computerScore += 1;
+      return "You Lose! Rock beats Scissor";
+    } else {
+      humanScore += 1;
+      return "You Win!";
+    }
+  }
 
-function playRound() {
   const humanChoice = getHumanChoice();
   const computerChoice = getComputerChoice();
+
+  // Scoring, Tie Count and Game Result
+  const result = document.querySelector("#result");
+  result.textContent = `Game Result: ${playRound(humanChoice, computerChoice)}`;
 
   const playerPick = document.querySelector("#player-pick");
   playerPick.textContent = `Player Pick: ${humanChoice}`;
 
   const computerPick = document.querySelector("#computer-pick");
   computerPick.textContent = `Computer Pick: ${computerChoice}`;
-
-  if (humanChoice === computerChoice) {
-    tieScore += 1;
-    return "Draw!";
-  } else if (humanChoice === "rock" && computerChoice === "paper") {
-    computerScore += 1;
-    return "You Lose! Paper beats Rock";
-  } else if (humanChoice === "paper" && computerChoice === "scissor") {
-    computerScore += 1;
-    return "You Lose! Scissor beats Paper";
-  } else if (humanChoice === "scissor" && computerChoice === "rock") {
-    computerScore += 1;
-    return "You Lose! Rock beats Scissor";
-  } else {
-    humanScore += 1;
-    return "You Win!";
-  }
-}
-
-function playGame(playRound) {
-  const result = document.querySelector("#result");
-  result.textContent = `Game Result: ${playRound}`;
 
   const playerScore = document.querySelector("#player-score");
   playerScore.textContent = `Player Score: ${humanScore}`;
@@ -76,5 +75,5 @@ function playGame(playRound) {
 
 const play = document.querySelector("#play-btn");
 play.addEventListener("click", () => {
-  playGame(playRound());
+  playGame();
 });
