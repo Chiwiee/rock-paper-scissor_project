@@ -19,6 +19,11 @@ function getHumanChoice() {
   pickPaper.addEventListener("click", () => {
     return "paper";
   });
+
+  const pickScissor = document.querySelector("#pickScissor");
+  pickScissor.addEventListener("click", () => {
+    return "scissor";
+  });
 }
 
 // Score Count
