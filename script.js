@@ -26,6 +26,7 @@ function getHumanChoice() {
 let humanScore = 0;
 let computerScore = 0;
 let tieScore = 0;
+let round = 1;
 
 function playGame() {
   function playRound(humanChoice, computerChoice) {
