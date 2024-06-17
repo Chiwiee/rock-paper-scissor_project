@@ -20,11 +20,6 @@ function getHumanChoice() {
     return "paper";
   } else if (answer === "scissor") {
     return "scissor";
-  } else {
-    for (let i = 0; i < answer; i++) {
-      alert(`Please pick a valid answer`);
-      return answer;
-    }
   }
 }
 // Score Count
