@@ -90,3 +90,8 @@ const rock = document.querySelector("#pickRock");
 rock.addEventListener("click", () => {
   playGame();
 });
+
+const paper = document.querySelector("#pickPaper");
+paper.addEventListener("click", () => {
+  playGame();
+});
