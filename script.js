@@ -14,6 +14,11 @@ function getHumanChoice() {
   pickRock.addEventListener("click", () => {
     return "rock";
   });
+
+  const pickPaper = document.querySelector("#pickPaper");
+  pickPaper.addEventListener("click", () => {
+    return "paper";
+  });
 }
 
 // Score Count
