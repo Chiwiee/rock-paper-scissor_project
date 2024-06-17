@@ -40,11 +40,9 @@ function playRound() {
 
   const computerPick = document.querySelector("computer-pick");
   computerPick.textContent = `Computer Pick: ${computerChoice}`;
-  console.log(`Computer Choose: ${computerChoice}`);
 
   if (humanChoice === computerChoice) {
-    humanScore += 1;
-    computerScore += 1;
+    tieScore += 1;
     return "Draw!";
   } else if (humanChoice === "rock" && computerChoice === "paper") {
     computerScore += 1;
