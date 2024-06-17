@@ -74,6 +74,8 @@ function playGame() {
 
   const tieCount = document.querySelector("#tie-count");
   tieCount.textContent = `Tie: ${tieScore}`;
+
+  const roundCount = document.querySelector("#round");
 }
 
 const play = document.querySelector("#rock-btn");
