@@ -62,7 +62,7 @@ function playGame() {
       return "You Win!";
     }
   }
-
+  // Players Selection
   const humanChoice = getHumanChoice();
   console.log(humanChoice);
   const computerChoice = getComputerChoice();
@@ -87,7 +87,8 @@ function playGame() {
   roundCount.textContent = `Round: ${round}`;
 }
 
-const rock = document.querySelector("#pickRock");
+// Play
+const rockbtn = document.querySelector("#pickRock");
 rock.addEventListener("click", () => {
   playGame();
 });
