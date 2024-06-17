@@ -30,6 +30,7 @@ function getHumanChoice() {
 
 let humanScore = 0;
 let computerScore = 0;
+let tieScore = 0;
 
 function playRound() {
   const humanChoice = getHumanChoice();
@@ -40,6 +41,7 @@ function playRound() {
   const computerPick = document.querySelector("computer-pick");
   computerPick.textContent = `Computer Pick: ${computerChoice}`;
   console.log(`Computer Choose: ${computerChoice}`);
+
   if (humanChoice === computerChoice) {
     humanScore += 1;
     computerScore += 1;
