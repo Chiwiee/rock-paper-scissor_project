@@ -10,9 +10,10 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  const answer = prompt(
-    "Please pick between: Rock, Paper, Scissor"
-  ).toLowerCase();
+  const pickRock = document.querySelector("#pickRock");
+  pickRock.addEventListener("click", () => {
+    return "rock";
+  });
 
   if (answer === "rock") {
     return "rock";
@@ -22,6 +23,7 @@ function getHumanChoice() {
     return "scissor";
   }
 }
+
 // Score Count
 let humanScore = 0;
 let computerScore = 0;
