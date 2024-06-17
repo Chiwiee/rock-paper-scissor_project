@@ -38,6 +38,7 @@ function playRound() {
   playerPick.textContent = `Player Pick: ${humanChoice}`;
 
   const computerPick = document.querySelector("computer-pick");
+  computerPick.textContent = `Computer Pick: ${computerChoice}`;
   console.log(`Computer Choose: ${computerChoice}`);
   if (humanChoice === computerChoice) {
     humanScore += 1;
