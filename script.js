@@ -39,10 +39,11 @@ function playRound() {
   const playerPick = document.querySelector("#player-pick");
   playerPick.textContent = `Player Pick: ${humanChoice}`;
 
-  // const computerPick = document.querySelector("computer-pick");
-  // computerPick.textContent = `Computer Pick: ${computerChoice}`;
+  const computerPick = document.querySelector("#computer-pick");
+  computerPick.textContent = `Computer Pick: ${computerChoice}`;
 
   const tieCount = document.querySelector("#tie-count");
+  tieCount.textContent = `Tie: ${tieScore}`;
 
   if (humanChoice === computerChoice) {
     tieScore += 1;
