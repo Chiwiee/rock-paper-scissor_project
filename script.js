@@ -64,6 +64,7 @@ function playGame() {
   }
 
   const humanChoice = getHumanChoice();
+  console.log(humanChoice);
   const computerChoice = getComputerChoice();
 
   // Scoring, Tie Count and Game Result
