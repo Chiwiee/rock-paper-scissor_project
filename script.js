@@ -42,9 +42,6 @@ function playRound() {
   const computerPick = document.querySelector("#computer-pick");
   computerPick.textContent = `Computer Pick: ${computerChoice}`;
 
-  const tieCount = document.querySelector("#tie-count");
-  tieCount.textContent = `Tie: ${tieScore}`;
-
   if (humanChoice === computerChoice) {
     tieScore += 1;
     return "Draw!";
@@ -72,6 +69,9 @@ function playGame(playRound) {
 
   const botScore = document.querySelector("#computer-score");
   botScore.textContent = `Computer Score: ${computerScore}`;
+
+  const tieCount = document.querySelector("#tie-count");
+  tieCount.textContent = `Tie: ${tieScore}`;
 }
 
 const play = document.querySelector("#play-btn");
