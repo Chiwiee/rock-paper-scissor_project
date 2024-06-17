@@ -12,16 +12,22 @@ function getComputerChoice() {
 function getHumanChoice() {
   const pickRock = document.querySelector("#pickRock");
   pickRock.addEventListener("click", () => {
+    const playerPick = document.querySelector("#player-pick");
+    playerPick.textContent = `Player Pick: Rock`;
     return "rock";
   });
 
   const pickPaper = document.querySelector("#pickPaper");
   pickPaper.addEventListener("click", () => {
+    const playerPick = document.querySelector("#player-pick");
+    playerPick.textContent = `Player Pick: Paper`;
     return "paper";
   });
 
   const pickScissor = document.querySelector("#pickScissor");
   pickScissor.addEventListener("click", () => {
+    const playerPick = document.querySelector("#player-pick");
+    playerPick.textContent = `Player Pick: Scissor`;
     return "scissor";
   });
 }
@@ -63,9 +69,6 @@ function playGame() {
   // Scoring, Tie Count and Game Result
   const result = document.querySelector("#result");
   result.textContent = `Game Result: ${playRound(humanChoice, computerChoice)}`;
-
-  const playerPick = document.querySelector("#player-pick");
-  playerPick.textContent = `Player Pick: ${humanChoice}`;
 
   const computerPick = document.querySelector("#computer-pick");
   computerPick.textContent = `Computer Pick: ${computerChoice}`;
