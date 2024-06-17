@@ -32,18 +32,23 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
       tieScore += 1;
+      round += 1;
       return "Draw!";
     } else if (humanChoice === "rock" && computerChoice === "paper") {
       computerScore += 1;
+      round += 1;
       return "You Lose! Paper beats Rock";
     } else if (humanChoice === "paper" && computerChoice === "scissor") {
       computerScore += 1;
+      round += 1;
       return "You Lose! Scissor beats Paper";
     } else if (humanChoice === "scissor" && computerChoice === "rock") {
       computerScore += 1;
+      round += 1;
       return "You Lose! Rock beats Scissor";
     } else {
       humanScore += 1;
+      round += 1;
       return "You Win!";
     }
   }
