@@ -79,7 +79,7 @@ function playGame() {
   roundCount.textContent = `Round: ${round}`;
 }
 
-const play = document.querySelector("#rock-btn");
+const play = document.querySelector("#pickRock");
 play.addEventListener("click", () => {
   playGame();
 });
