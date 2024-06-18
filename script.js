@@ -41,9 +41,10 @@ let round = 1;
 const button = document.querySelectorAll("button");
 button.forEach((button) => {
   button.addEventListener("click", function (e) {
-    playerSelection = button.id;
-
     function playGame() {
+      playerSelection = button.id;
+      const computerChoice = getComputerChoice();
+
       function playRound(humanChoice, computerChoice) {
         if (humanChoice === computerChoice) {
           tieScore += 1;
@@ -68,9 +69,8 @@ button.forEach((button) => {
         }
       }
       // Players Selection
-      const humanChoice = getHumanChoice();
-      console.log(humanChoice);
-      const computerChoice = getComputerChoice();
+      // const humanChoice = getHumanChoice();
+      // console.log(humanChoice);
 
       // Scoring, Tie Count and Game Result
       const result = document.querySelector("#result");
