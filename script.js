@@ -51,12 +51,24 @@ button.forEach((button) => {
       // Winner Value
       function winner() {
         if (tieScore === 5) {
+          humanScore = 0;
+          computerScore = 0;
+          tieScore = 0;
+          round = 1;
           alert("DRAW! Please Try Again.");
           return "DRAW";
         } else if (humanScore === 5) {
+          humanScore = 0;
+          computerScore = 0;
+          tieScore = 0;
+          round = 1;
           alert("Player Win! Congratulations!");
           return "Player";
         } else if (computerScore === 5) {
+          humanScore = 0;
+          computerScore = 0;
+          tieScore = 0;
+          round = 1;
           alert("Computer Win! Better Luck Next Time.");
           return "Computer";
         } else {
