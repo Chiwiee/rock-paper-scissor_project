@@ -48,7 +48,21 @@ button.forEach((button) => {
           return "You Win!";
         }
       }
-
+      // Winner Value
+      function winner() {
+        if (tieScore === 5) {
+          alert("DRAW! Please Try Again.");
+          return "DRAW";
+        } else if (humanScore === 5) {
+          alert("Player Win! Congratulations!");
+          return "Player";
+        } else if (computerScore === 5) {
+          alert("Computer Win! Better Luck Next Time.");
+          return "Computer";
+        } else {
+          return "";
+        }
+      }
       // Scoring, Tie Count and Game Result
       const result = document.querySelector("#result");
       result.textContent = `Game Result: ${playRound(
