@@ -56,21 +56,22 @@ button.forEach((button) => {
         computerChoice
       )}`;
 
+      // Player Pick
       const playerPick = document.querySelector("#player-pick");
       playerPick.textContent = `Computer Pick: ${playerSelection}`;
-
+      // Computer Pick
       const computerPick = document.querySelector("#computer-pick");
       computerPick.textContent = `Computer Pick: ${computerChoice}`;
-
+      // Player Score
       const playerScore = document.querySelector("#player-score");
       playerScore.textContent = `Player Score: ${humanScore}`;
-
+      // ComputerScore
       const botScore = document.querySelector("#computer-score");
       botScore.textContent = `Computer Score: ${computerScore}`;
-
+      // Tie Count
       const tieCount = document.querySelector("#tie-count");
       tieCount.textContent = `Tie: ${tieScore}`;
-
+      // Round Count
       const roundCount = document.querySelector("#round");
       roundCount.textContent = `Round: ${round}`;
     }
