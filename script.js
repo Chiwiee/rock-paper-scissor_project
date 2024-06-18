@@ -82,6 +82,9 @@ button.forEach((button) => {
         computerChoice
       )}`;
 
+      const playerPick = document.querySelector("#player-pick");
+      playerPick.textContent = `Computer Pick: ${playerSelection}`;
+
       const computerPick = document.querySelector("#computer-pick");
       computerPick.textContent = `Computer Pick: ${computerChoice}`;
 
@@ -97,6 +100,7 @@ button.forEach((button) => {
       const roundCount = document.querySelector("#round");
       roundCount.textContent = `Round: ${round}`;
     }
+    playGame();
   });
 });
 
