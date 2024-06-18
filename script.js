@@ -87,18 +87,18 @@ function playGame() {
   roundCount.textContent = `Round: ${round}`;
 }
 
-// Play
-const rockbtn = document.querySelector("#pickRock");
-rock.addEventListener("click", () => {
-  playGame();
-});
+// // Play
+// const rockbtn = document.querySelector("#pickRock");
+// rock.addEventListener("click", () => {
+//   playGame();
+// });
 
-const paper = document.querySelector("#pickPaper");
-paper.addEventListener("click", () => {
-  playGame();
-});
+// const paper = document.querySelector("#pickPaper");
+// paper.addEventListener("click", () => {
+//   playGame();
+// });
 
-const scissor = document.querySelector("#pickScissor");
-scissor.addEventListener("click", () => {
-  playGame();
-});
+// const scissor = document.querySelector("#pickScissor");
+// scissor.addEventListener("click", () => {
+//   playGame();
+// });
