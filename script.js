@@ -30,18 +30,18 @@ button.forEach((button) => {
         } else if (playerSelection === "rock" && computerChoice === "paper") {
           computerScore += 1;
           round += 1;
-          return "You Lose! Paper beats Rock";
+          return "You Lose!";
         } else if (
           playerSelection === "paper" &&
           computerChoice === "scissor"
         ) {
           computerScore += 1;
           round += 1;
-          return "You Lose! Scissor beats Paper";
+          return "You Lose!";
         } else if (playerSelection === "scissor" && computerChoice === "rock") {
           computerScore += 1;
           round += 1;
-          return "You Lose! Rock beats Scissor";
+          return "You Lose!";
         } else {
           humanScore += 1;
           round += 1;
@@ -55,21 +55,21 @@ button.forEach((button) => {
           computerScore = 0;
           tieScore = 0;
           round = 1;
-          alert("DRAW! Please Try Again.");
-          return "DRAW";
+          alert("Draw! Try Again.");
+          return "Draw!";
         } else if (humanScore === 5) {
           humanScore = 0;
           computerScore = 0;
           tieScore = 0;
           round = 1;
-          alert("Player Win! Congratulations!");
+          alert("Player Win!");
           return "Player";
         } else if (computerScore === 5) {
           humanScore = 0;
           computerScore = 0;
           tieScore = 0;
           round = 1;
-          alert("Computer Win! Better Luck Next Time.");
+          alert("Computer Win!");
           return "Computer";
         } else {
           return "";
