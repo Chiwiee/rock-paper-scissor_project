@@ -42,23 +42,26 @@ const button = document.querySelectorAll("button");
 button.forEach((button) => {
   button.addEventListener("click", function (e) {
     function playGame() {
-      playerSelection = button.id;
-      const computerChoice = getComputerChoice();
+      const playerSelection = button.id;
 
-      function playRound(humanChoice, computerChoice) {
-        if (humanChoice === computerChoice) {
+      const computerChoice = getComputerChoice();
+      function playRound(playerSelection, computerChoice) {
+        if (playerSelection === computerChoice) {
           tieScore += 1;
           round += 1;
           return "Draw!";
-        } else if (humanChoice === "rock" && computerChoice === "paper") {
+        } else if (playerSelection === "rock" && computerChoice === "paper") {
           computerScore += 1;
           round += 1;
           return "You Lose! Paper beats Rock";
-        } else if (humanChoice === "paper" && computerChoice === "scissor") {
+        } else if (
+          playerSelection === "paper" &&
+          computerChoice === "scissor"
+        ) {
           computerScore += 1;
           round += 1;
           return "You Lose! Scissor beats Paper";
-        } else if (humanChoice === "scissor" && computerChoice === "rock") {
+        } else if (playerSelection === "scissor" && computerChoice === "rock") {
           computerScore += 1;
           round += 1;
           return "You Lose! Rock beats Scissor";
@@ -75,7 +78,7 @@ button.forEach((button) => {
       // Scoring, Tie Count and Game Result
       const result = document.querySelector("#result");
       result.textContent = `Game Result: ${playRound(
-        humanChoice,
+        playerSelection,
         computerChoice
       )}`;
 
