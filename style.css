@@ -17,6 +17,8 @@
       margin: 3px;
       border: 1px, outset, rgb(82, 82, 82);
       border-radius: 10px;
+      background-color: #fff;
+      color: black;
     }
   }
 }
