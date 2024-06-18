@@ -9,28 +9,28 @@ function getComputerChoice() {
   }
 }
 
-function getHumanChoice() {
-  const pickRock = document.querySelector("#pickRock");
-  pickRock.addEventListener("click", () => {
-    const playerPick = document.querySelector("#player-pick");
-    playerPick.textContent = `Player Pick: Rock`;
-    return "rock";
-  });
+// function getHumanChoice() {
+//   const pickRock = document.querySelector("#pickRock");
+//   pickRock.addEventListener("click", () => {
+//     const playerPick = document.querySelector("#player-pick");
+//     playerPick.textContent = `Player Pick: Rock`;
+//     return "rock";
+//   });
 
-  const pickPaper = document.querySelector("#pickPaper");
-  pickPaper.addEventListener("click", () => {
-    const playerPick = document.querySelector("#player-pick");
-    playerPick.textContent = `Player Pick: Paper`;
-    return "paper";
-  });
+//   const pickPaper = document.querySelector("#pickPaper");
+//   pickPaper.addEventListener("click", () => {
+//     const playerPick = document.querySelector("#player-pick");
+//     playerPick.textContent = `Player Pick: Paper`;
+//     return "paper";
+//   });
 
-  const pickScissor = document.querySelector("#pickScissor");
-  pickScissor.addEventListener("click", () => {
-    const playerPick = document.querySelector("#player-pick");
-    playerPick.textContent = `Player Pick: Scissor`;
-    return "scissor";
-  });
-}
+//   const pickScissor = document.querySelector("#pickScissor");
+//   pickScissor.addEventListener("click", () => {
+//     const playerPick = document.querySelector("#player-pick");
+//     playerPick.textContent = `Player Pick: Scissor`;
+//     return "scissor";
+//   });
+// }
 
 // Score Count
 let humanScore = 0;
