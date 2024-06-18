@@ -74,7 +74,7 @@ button.forEach((button) => {
       winnerResult.textContent = `Winner: ${winner()}`;
       // Player Pick
       const playerPick = document.querySelector("#player-pick");
-      playerPick.textContent = `Computer Pick: ${playerSelection}`;
+      playerPick.textContent = `Player Pick: ${playerSelection}`;
       // Computer Pick
       const computerPick = document.querySelector("#computer-pick");
       computerPick.textContent = `Computer Pick: ${computerChoice}`;
