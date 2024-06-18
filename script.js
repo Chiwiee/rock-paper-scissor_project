@@ -9,29 +9,6 @@ function getComputerChoice() {
   }
 }
 
-// function getHumanChoice() {
-//   const pickRock = document.querySelector("#pickRock");
-//   pickRock.addEventListener("click", () => {
-//     const playerPick = document.querySelector("#player-pick");
-//     playerPick.textContent = `Player Pick: Rock`;
-//     return "rock";
-//   });
-
-//   const pickPaper = document.querySelector("#pickPaper");
-//   pickPaper.addEventListener("click", () => {
-//     const playerPick = document.querySelector("#player-pick");
-//     playerPick.textContent = `Player Pick: Paper`;
-//     return "paper";
-//   });
-
-//   const pickScissor = document.querySelector("#pickScissor");
-//   pickScissor.addEventListener("click", () => {
-//     const playerPick = document.querySelector("#player-pick");
-//     playerPick.textContent = `Player Pick: Scissor`;
-//     return "scissor";
-//   });
-// }
-
 // Score Count
 let humanScore = 0;
 let computerScore = 0;
@@ -71,9 +48,6 @@ button.forEach((button) => {
           return "You Win!";
         }
       }
-      // Players Selection
-      // const humanChoice = getHumanChoice();
-      // console.log(humanChoice);
 
       // Scoring, Tie Count and Game Result
       const result = document.querySelector("#result");
@@ -103,19 +77,3 @@ button.forEach((button) => {
     playGame();
   });
 });
-
-// // Play
-// const rockbtn = document.querySelector("#pickRock");
-// rock.addEventListener("click", () => {
-//   playGame();
-// });
-
-// const paper = document.querySelector("#pickPaper");
-// paper.addEventListener("click", () => {
-//   playGame();
-// });
-
-// const scissor = document.querySelector("#pickScissor");
-// scissor.addEventListener("click", () => {
-//   playGame();
-// });
