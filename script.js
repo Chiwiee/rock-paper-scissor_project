@@ -38,6 +38,10 @@ let computerScore = 0;
 let tieScore = 0;
 let round = 1;
 
+const button = document.querySelectorAll("button");
+button.forEach((button) => {
+  button.addEventListener("click", function (e) {});
+});
 function playGame() {
   function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
